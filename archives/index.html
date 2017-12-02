@@ -491,12 +491,6 @@
     
 
     
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
-    
 
   </div>
 
@@ -638,7 +632,7 @@
     new Valine({
         el: '#comments' ,
         verify: true,
-        notify: true,
+        notify: false,
         appId: 'BchU96SX3AMMzUGezhDRTw2u-gzGzoHsz',
         appKey: 'iVr21Ie31C71IwKwxi2Mt5IF',
         placeholder: 'Just go go',
@@ -770,43 +764,6 @@
   
 
   
-  
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
-
-  
-  
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
-
-  <script>
-    
-      pbOptions = {};
-      
-          pbOptions.iconStyle = "box";
-      
-          pbOptions.boxForm = "horizontal";
-      
-          pbOptions.position = "bottomCenter";
-      
-          pbOptions.networks = "Weibo,Wechat";
-      
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
-    
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
-    
-  </script>
-
   
 
   
