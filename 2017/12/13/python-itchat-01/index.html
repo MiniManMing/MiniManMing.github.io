@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="明说">
 <meta property="og:description" content="前言我的初衷我感觉有时需要静下来做事的时候，微信总事会勾起我要看手机的欲望（个人定力差）微信的联系人和群挺多的有时会分散我的注意力。所以我建立了一个微信小号，目的是当有人找我有事时发微信给大号时程序可以把重要的消息转发到我的小号。（是不是很奇葩，估计有人会说你Y是不是有病是不是在炫技，微信明明有屏蔽功能啊！）其实我的看法是学习吗？就是要用一些技术去满足一下自己的奇葩欲望。最终目的还是学会一样技术吗">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-12T16:43:12.732Z">
+<meta property="og:updated_time" content="2017-12-12T16:45:44.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用itchat玩转微信(环境的搭建)">
 <meta name="twitter:description" content="前言我的初衷我感觉有时需要静下来做事的时候，微信总事会勾起我要看手机的欲望（个人定力差）微信的联系人和群挺多的有时会分散我的注意力。所以我建立了一个微信小号，目的是当有人找我有事时发微信给大号时程序可以把重要的消息转发到我的小号。（是不是很奇葩，估计有人会说你Y是不是有病是不是在炫技，微信明明有屏蔽功能啊！）其实我的看法是学习吗？就是要用一些技术去满足一下自己的奇葩欲望。最终目的还是学会一样技术吗">
@@ -390,13 +390,22 @@
 <h3 id="Linux上环境的搭建"><a href="#Linux上环境的搭建" class="headerlink" title="Linux上环境的搭建"></a>Linux上环境的搭建</h3><ul>
 <li><strong>安装Python环境</strong> </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install software-properties-common   *添加软件包*</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
-<p>sudo add-apt-repository ppa:jonathonf/python-3.6    <em>添加软件源</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>sudo apt-get update        <em>更新</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>sudo apt-get install python3.6    <em>安装</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- **修改系统默认编译版本为Python3.6**</span><br></pre></td></tr></table></figure></p>
-<p>cd /user/bin<br>rm python<br>ln -s python3.6m python<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- **升级pip版本**</span><br></pre></td></tr></table></figure></p>
-<p>python pip install –upgrade pip<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- **安装itchat**</span><br></pre></td></tr></table></figure></p>
-<p>pip install itchat<br>```</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install software-properties-common   添加软件包</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:jonathonf/python-3.6    添加软件源</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update		更新</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python3.6	安装</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>修改系统默认编译版本为Python3.6</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /user/bin</span><br><span class="line">rm python</span><br><span class="line">ln -s python3.6m python</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>升级pip版本</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>安装itchat</strong> </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install itchat</span><br></pre></td></tr></table></figure>
 <hr>
 <ul>
 <li><strong>未完待续</strong>   <em>12月14日 更新。</em></li>
