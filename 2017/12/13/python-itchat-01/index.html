@@ -381,7 +381,7 @@
 <li><strong>安装Python3.6.3</strong> <a href="https://www.python.org/ftp/python/3.6.3/python-3.6.3.exe" target="_blank" rel="noopener">Link</a> （安装直接狂点下一步）</li>
 <li><strong>测试Python环境</strong> Win+R 输入cmd然后输入python会出现Python Console</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">C:\Users\shao_&gt;python</span><br><span class="line">Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)] on win32</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt; _</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">C:\Users\shao_&gt;python</span><br><span class="line">Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)] on win32</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line">&gt;&gt;&gt; _</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>安装PyCharm</strong> <a href="https://download.jetbrains.8686c.com/python/pycharm-professional-2017.3.exe" target="_blank" rel="noopener">Link</a></li>
 <li><strong>PyCharm怎样和谐</strong> <a href="http://idea.lanyus.com/" target="_blank" rel="noopener">Link</a>  <code>C:\Windows\System32\drivers\etc</code>  hosts文件里上<code>0.0.0.0 account.jetbrains.com</code></li>
@@ -390,22 +390,22 @@
 <h3 id="Linux上环境的搭建"><a href="#Linux上环境的搭建" class="headerlink" title="Linux上环境的搭建"></a>Linux上环境的搭建</h3><ul>
 <li><strong>安装Python环境</strong> </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install software-properties-common   添加软件包</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:jonathonf/python-3.6    添加软件源</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update		更新</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python3.6	安装</span><br></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">sudo</span> apt-<span class="meta">get</span> install software-properties-<span class="meta">common</span>   添加软件包</span><br></pre></td></tr></table></figure>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> add-apt-repository </span>ppa:jonathonf/python-3.6    添加软件源</span><br></pre></td></tr></table></figure>
+<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span>		更新</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> install python3.6	安装</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>修改系统默认编译版本为Python3.6</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /user/bin</span><br><span class="line">rm python</span><br><span class="line">ln -s python3.6m python</span><br></pre></td></tr></table></figure>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /user/bin</span><br><span class="line">rm <span class="keyword">python</span></span><br><span class="line"><span class="keyword">ln</span> -s <span class="keyword">python3</span>.<span class="number">6</span><span class="keyword">m</span> <span class="keyword">python</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>升级pip版本</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python pip <span class="keyword">install</span> <span class="comment">--upgrade pip</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>安装itchat</strong> </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install itchat</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> itchat</span><br></pre></td></tr></table></figure>
 <hr>
 <ul>
 <li><strong>未完待续</strong>   <em>12月14日 更新。</em></li>
