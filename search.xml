@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[itchat连接智能机器人]]></title>
     <url>%2F2017%2F12%2F15%2Fitchat%E8%BF%9E%E6%8E%A5%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%2F</url>
-    <content type="text"><![CDATA[前言承上启下在上一篇博客讲了itchat的api的相关内容，接下来我要说的是怎样利用itchat实现一个微信自动回复的智能聊天机器人。 步骤分析 注册图灵机器人账号 Link创建机器人获得图灵机器人的api_key编写代码测试机器人 ##注册账号 ###略（So Easy） ##创建机器人 创建机器人 填写相关信息 填写机器人相关信息 获取APIKey 打开相关功能开关 CodingKEY = 'your apikey '@itchat.msg_register([TEXT], isFriendChat=True)def text_reply(msg): apiUrl = 'http://www.tuling123.com/openapi/api' data = &#123; 'key': KEY, 'info': msg['Content'], 'userid': 'wechat-robot', &#125; try: r = requests.post(apiUrl, data=data).json() return r.get('text') except: return 是不是很简单，更多复杂功能等待你的开发！ 下一篇: 一些算法 更新时间: 12月21日 觉得不错记得来微博粉我哟！ Weibo]]></content>
+    <content type="text"><![CDATA[前言承上启下在上一篇博客讲了itchat的api的相关内容，接下来我要说的是怎样利用itchat实现一个微信自动回复的智能聊天机器人。 步骤分析 注册图灵机器人账号 Link创建机器人获得图灵机器人的api_key编写代码测试机器人 注册账号略（So Easy）创建机器人 创建机器人 填写相关信息 填写机器人相关信息 获取APIKey 打开相关功能开关 CodingKEY = 'your apikey '@itchat.msg_register([TEXT], isFriendChat=True)def text_reply(msg): apiUrl = 'http://www.tuling123.com/openapi/api' data = &#123; 'key': KEY, 'info': msg['Content'], 'userid': 'wechat-robot', &#125; try: r = requests.post(apiUrl, data=data).json() return r.get('text') except: return 是不是很简单，更多复杂功能等待你的开发！ 下一篇: 一些算法 更新时间: 12月21日 觉得不错记得来微博粉我哟！ Weibo]]></content>
       <categories>
         <category>Teach</category>
       </categories>
