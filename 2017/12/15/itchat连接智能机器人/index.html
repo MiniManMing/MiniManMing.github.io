@@ -93,17 +93,17 @@
 <meta property="og:site_name" content="明说">
 <meta property="og:description" content="前言承上启下在上一篇博客讲了itchat的api的相关内容，接下来我要说的是怎样利用itchat实现一个微信自动回复的智能聊天机器人。 步骤分析 注册图灵机器人账号 Link创建机器人获得图灵机器人的api_key编写代码测试机器人  注册账号略（So Easy）创建机器人 创建机器人 填写相关信息 填写机器人相关信息 获取APIKey 打开相关功能开关    CodingKEY = &apos;your">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/1.png">
-<meta property="og:image" content="http://yoursite.com/images/2.png">
-<meta property="og:image" content="http://yoursite.com/images/3.png">
-<meta property="og:image" content="http://yoursite.com/images/4.png">
-<meta property="og:image" content="http://yoursite.com/images/5.png">
-<meta property="og:image" content="http://yoursite.com/images/6.png">
-<meta property="og:updated_time" content="2017-12-15T16:02:14.281Z">
+<meta property="og:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/1.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/2.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/3.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/4.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/5.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/6.png">
+<meta property="og:updated_time" content="2017-12-15T16:28:25.950Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="itchat连接智能机器人">
 <meta name="twitter:description" content="前言承上启下在上一篇博客讲了itchat的api的相关内容，接下来我要说的是怎样利用itchat实现一个微信自动回复的智能聊天机器人。 步骤分析 注册图灵机器人账号 Link创建机器人获得图灵机器人的api_key编写代码测试机器人  注册账号略（So Easy）创建机器人 创建机器人 填写相关信息 填写机器人相关信息 获取APIKey 打开相关功能开关    CodingKEY = &apos;your">
-<meta name="twitter:image" content="http://yoursite.com/images/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/15/itchat连接智能机器人/1.png">
 
 
 
@@ -382,12 +382,12 @@
 <p>注册图灵机器人账号 <a href="http://www.tuling123.com/" target="_blank" rel="noopener">Link</a><br>创建机器人<br>获得图灵机器人的api_key<br>编写代码<br>测试机器人</p>
 </blockquote>
 <h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><h3 id="略（So-Easy）"><a href="#略（So-Easy）" class="headerlink" title="略（So Easy）"></a>略（So Easy）</h3><h2 id="创建机器人"><a href="#创建机器人" class="headerlink" title="创建机器人"></a>创建机器人</h2><ul>
-<li>创建机器人<br><img src="/images/1.png" alt="创建机器人"></li>
-<li>填写相关信息<br><img src="/images/2.png" alt="填写相关信息"></li>
-<li>填写机器人相关信息<br><img src="/images/3.png" alt="填写机器人信息"></li>
-<li>获取APIKey<br><img src="/images/4.png" alt="获取APIKey"></li>
-<li><p>打开相关功能开关<br><img src="/images/5.png" alt="打开开关"></p>
-<p><img src="/images/6.png" alt="打开开关"></p>
+<li>创建机器人<br><img src="/2017/12/15/itchat连接智能机器人/1.png" alt="创建机器人"></li>
+<li>填写相关信息<br><img src="/2017/12/15/itchat连接智能机器人/2.png" alt="填写相关信息"></li>
+<li>填写机器人相关信息<br><img src="/2017/12/15/itchat连接智能机器人/3.png" alt="填写机器人信息"></li>
+<li>获取APIKey<br><img src="/2017/12/15/itchat连接智能机器人/4.png" alt="获取APIKey"></li>
+<li><p>打开相关功能开关<br><img src="/2017/12/15/itchat连接智能机器人/5.png" alt="打开开关"></p>
+<p><img src="/2017/12/15/itchat连接智能机器人/6.png" alt="打开开关"></p>
 </li>
 </ul>
 <h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2><figure class="highlight kotlin"><table><tr><td class="code"><pre><span class="line">KEY = <span class="string">'your apikey '</span></span><br><span class="line"><span class="meta">@itchat</span>.msg_register([TEXT], isFriendChat=True)</span><br><span class="line">def text_reply(msg):</span><br><span class="line">        apiUrl = <span class="string">'http://www.tuling123.com/openapi/api'</span></span><br><span class="line">        <span class="keyword">data</span> = &#123;</span><br><span class="line">            <span class="string">'key'</span>: KEY,</span><br><span class="line">            <span class="string">'info'</span>: msg[<span class="string">'Content'</span>],</span><br><span class="line">            <span class="string">'userid'</span>: <span class="string">'wechat-robot'</span>,</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            r = requests.post(apiUrl, <span class="keyword">data</span>=<span class="keyword">data</span>).json()</span><br><span class="line">            <span class="keyword">return</span> r.<span class="keyword">get</span>(<span class="string">'text'</span>)</span><br><span class="line">        except:</span><br><span class="line">            <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
